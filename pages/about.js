@@ -18,7 +18,11 @@ const About = () => {
             <div className={styles.details}>
                 <p>I am a guy, or rather a cisgendered male. I write code to express my intelectuality and to ease stress. Dealing with Front-End stuffs at the moment to become very-good at what i do.</p>
                 <br />
+<<<<<<< HEAD
                 <p>I am currently Unemployed but would be looking forward to getting a job (remote preferably) as soon as possible. </p>
+=======
+                <p>I am currently Unemployed but would be looking forward to getting a job (remote preferably) as soon as possible </p>
+>>>>>>> dc3b2021061a94f28e7a44a63cb5a300d30fce99
             </div>
         </>
     );
