@@ -1,4 +1,5 @@
-const { connectToDatabase } = require('../../lib/mongodb');
+//const { connectToDatabase } = require('../../lib/mongodb');
+import { connectToDatabase } from '../../lib/mongodb';
 
 export default async function handler(req, res) {
     // switch the methods
