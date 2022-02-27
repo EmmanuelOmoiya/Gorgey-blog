@@ -32,7 +32,7 @@ const Home = ({posts}) => {
           {posts.message.map((post, i) => (
             <div className={styles.post} key={i}>
               <h2 className={styles.title}>{post.title}</h2>
-              <p className={styles.author}>Posted by {post.author} on {post.date} / {post.month} {post.year}</p>
+              <p className={styles.author}>Posted by {post.author} on {post.date} / {post.month} / {post.year}</p>
               <br />
             </div>
            ))}
