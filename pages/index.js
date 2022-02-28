@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import axios from 'axios'
 
-
-export async function getStaticProps() {
-  const url = `http://localhost:3000/api/posts`;
-  const result = await fetch(url)
-  return { props: {
-    posts: await result.json()
-  }}
-}
+export const getStaticProps = async () => {
+  const res = await axios.get("http://localhost:3000/api/posts");
+  return {
+    props: { posts: res.data }
+  };
+};
 
 const Home = ({posts}) => {
   return (
